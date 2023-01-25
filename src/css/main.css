@@ -1,13 +1,17 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 62.5%;
 }
 
 html > body {
-  box-sizing: content-box;
   font-family: "Times New Roman", Times, serif;
   font-size: 2rem;
-  margin: 0;
-  padding: 0;
+  padding: 0 1.5rem;
 }
 
 h1.heading {
@@ -33,4 +37,45 @@ h4 {
 
 h6 {
   font-size: 1.8rem;
+}
+
+/* Custom Styles */
+.px-sm-8 {
+  padding: 4rem;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.article__picture-xs {
+  max-height: 70%;
+}
+
+.grid-auto-xs {
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+}
+
+.grid-3x3 {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: fit-content;
+  place-items: center;
+}
+
+@media only screen and (min-width: 576px) {
+  .article__picture-sm {
+    max-height: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .grid-auto-lg {
+    gap: 2.5rem 2rem;
+    grid-template-columns: repeat(11, 1fr);
+  }
+}
+
+.sponsor {
+  margin: auto;
 }
