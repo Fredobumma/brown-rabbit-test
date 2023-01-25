@@ -2,9 +2,10 @@ html {
   font-size: 62.5%;
 }
 
-body {
+html > body {
   box-sizing: content-box;
   font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
 }
@@ -25,8 +26,9 @@ h4 {
   font-size: 2.5rem;
 }
 
-h5 {
+.btn.default-text {
   font-size: 2rem;
+  padding: 1rem 2rem;
 }
 
 h6 {
