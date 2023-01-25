@@ -1,14 +1,3 @@
-window.onload = function () {
+import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
-    var el = document.createElement("div");
-    el.innerHTML = "RABBIT TEST ";
-    var div = document.getElementById("headline");
-    insertAfter(div, el);
-
-    /* FUNCTIONS */
-
-    // Inserts newNode after referenceNode
-    function insertAfter(referenceNode, newNode) {
-        referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-    }
-};
+window.onload = function () {};
