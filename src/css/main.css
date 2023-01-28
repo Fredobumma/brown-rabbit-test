@@ -14,6 +14,7 @@ html > body {
   padding: 0 1.5rem;
 }
 
+/* Typography */
 h1.heading {
   font-size: 4rem;
 }
@@ -22,7 +23,8 @@ h2.heading {
   font-size: 3.5rem;
 }
 
-h3.heading {
+h3.heading,
+.nav__link {
   font-size: 3rem;
 }
 
@@ -31,13 +33,21 @@ h4.heading {
   font-weight: bold;
 }
 
+p.text--small {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 992px) {
+  h4.heading {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
+
+/* Buttons */
 .default-text,
 .btn.default-text {
   font-size: 2rem;
-}
-
-p.text--small {
-  font-size: 1.8rem;
 }
 
 .btn.default-text {
@@ -66,6 +76,10 @@ p.text--small {
   height: 20rem;
   max-height: auto;
   object-fit: cover;
+}
+
+.gap-2rem {
+  gap: 2rem;
 }
 
 .grid-auto-xs {
@@ -99,11 +113,6 @@ p.text--small {
 }
 
 @media screen and (min-width: 992px) {
-  h4.heading {
-    font-size: 3rem;
-    font-weight: 500;
-  }
-
   .grid-auto-lg {
     gap: 2.5rem 2rem;
     grid-template-columns: repeat(11, 1fr);
