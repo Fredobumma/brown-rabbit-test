@@ -18,38 +18,54 @@ h1.heading {
   font-size: 4rem;
 }
 
-h2 {
+h2.heading {
   font-size: 3.5rem;
 }
 
-h3 {
+h3.heading {
   font-size: 3rem;
 }
 
-h4 {
+h4.heading {
   font-size: 2.5rem;
+  font-weight: bold;
 }
 
+.default-text,
 .btn.default-text {
   font-size: 2rem;
-  padding: 1rem 2rem;
 }
 
-h6 {
+p.text--small {
   font-size: 1.8rem;
 }
 
+.btn.default-text {
+  padding: 1rem 2rem;
+}
+
 /* Custom Styles */
-.px-sm-8 {
-  padding: 4rem;
+.mb-2rem {
+  margin-bottom: 2rem;
+}
+
+.px-sm-3rem {
+  padding: 0 3rem;
 }
 
 .w-fit {
   width: fit-content;
 }
 
+.w-xs-100 {
+  width: 100%;
+  height: auto;
+}
+
 .article__picture-xs {
-  max-height: 70%;
+  height: 20rem;
+  max-height: auto;
+  object-fit: cover;
 }
 
 .grid-auto-xs {
@@ -63,13 +79,31 @@ h6 {
   place-items: center;
 }
 
+.opacity-65 {
+  opacity: 0.65;
+}
+
 @media only screen and (min-width: 576px) {
   .article__picture-sm {
+    height: 100%;
     max-height: 100%;
+  }
+
+  .w-sm-none {
+    width: auto;
+  }
+
+  .mt-sm-2rem {
+    margin-top: 2rem;
   }
 }
 
 @media screen and (min-width: 992px) {
+  h4.heading {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
   .grid-auto-lg {
     gap: 2.5rem 2rem;
     grid-template-columns: repeat(11, 1fr);
