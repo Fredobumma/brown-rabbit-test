@@ -1,80 +1,144 @@
 window.onload = function () {
-  // IMPLEMENTING NAVBAR MENU
-  // variables
-  const menus = document.querySelectorAll(".menu");
-  const current = document.getElementsByClassName("is_visible");
-  const navList = document.getElementsByClassName("nav-list");
+  // <------------ IMPLEMENTING NAVBAR MENU ------------>
+  function handleMenu() {
+    // variables
+    const menus = document.querySelectorAll(".menu");
+    const current = document.getElementsByClassName("is_visible");
+    const navList = document.getElementsByClassName("nav-list")[0];
 
-  // event listeners
-  menus.forEach((menu) => menu.addEventListener("click", toggleMenu));
-  navList[0].addEventListener("click", closeMenu);
+    //logic and functions
+    function toggleMenu() {
+      current[0].classList.remove("is_visible");
+      this.classList.add("is_visible");
 
-  //logic and functions
-  function toggleMenu() {
-    current[0].classList.remove("is_visible");
-    this.classList.add("is_visible");
-
-    if (this.classList.contains("close_icon"))
-      navList[0].classList.add("hide_nav-list");
-    else navList[0].classList.remove("hide_nav-list");
-  }
-
-  function closeMenu() {
-    if (window.innerWidth < 992) {
-      menus.forEach((menu) => {
-        menu !== current[0]
-          ? menu.classList.add("is_visible")
-          : current[0].classList.remove("is_visible");
-      });
-      navList[0].classList.add("hide_nav-list");
-    }
-  }
-
-  // IMPLEMENTING SEARCH
-  // variables
-  const searchBox = document.querySelectorAll(".search");
-  const searchSm = document.getElementsByClassName("search-sm");
-  const searchTab = document.getElementsByClassName("search-tab");
-  const tabWrapper = document.getElementById("tab-wrapper");
-  const searchInput = document.getElementById("search-input");
-  let timer;
-
-  //event listeners
-  searchBox.forEach((el) => el.addEventListener("click", toggleSearch));
-  tabWrapper.addEventListener("click", closeSearch);
-  searchInput.addEventListener("input", search);
-  searchInput.addEventListener("keyup", timing);
-
-  //logic and functions
-  function toggleSearch() {
-    if (searchTab[0].classList.contains("open-search-tab")) {
-      searchSm[0].classList.remove("open-search");
-      searchTab[0].classList.remove("open-search-tab");
-    } else {
-      searchSm[0].classList.add("open-search");
-      searchTab[0].classList.add("open-search-tab");
-    }
-  }
-
-  function closeSearch() {
-    searchSm[0].classList.remove("open-search");
-    searchTab[0].classList.remove("open-search-tab");
-  }
-
-  function search() {
-    const articles = document.querySelectorAll(".article");
-    const searchQuery = searchInput.value;
-    articles.forEach((article) => {
-      if (article.innerText.toLowerCase().includes(searchQuery.toLowerCase())) {
-        article.classList.remove("is_hidden");
+      if (this.classList.contains("close_icon")) {
+        closeNav();
       } else {
-        article.classList.add("is_hidden");
+        navList.classList.remove("hide_nav-list");
+        window.innerWidth < 992 && document.body.classList.add("fixed-scroll");
       }
+    }
+
+    const closeMenu = () => {
+      if (window.innerWidth < 992) {
+        menus.forEach((menu) => {
+          menu !== current[0]
+            ? menu.classList.add("is_visible")
+            : current[0].classList.remove("is_visible");
+        });
+        closeNav();
+      }
+    };
+
+    const closeNav = () => {
+      navList.classList.add("hide_nav-list");
+      document.body.classList.remove("fixed-scroll");
+    };
+
+    // event listeners
+    menus.forEach((menu) => menu.addEventListener("click", toggleMenu));
+    navList.addEventListener("click", closeMenu);
+  }
+  handleMenu();
+
+  // <---------- IMPLEMENTING SEARCH ------------>
+  function handleSearch() {
+    // variables
+    const navList = document.getElementsByClassName("nav-list")[0];
+    const searchBox = document.querySelectorAll(".search");
+    const searchSm = document.getElementsByClassName("search-sm")[0];
+    const searchTab = document.getElementsByClassName("search-tab")[0];
+    const tabWrapper = document.getElementById("tab-wrapper");
+    const searchInput = document.querySelectorAll(".search-input");
+    let timer;
+
+    //logic and functions
+    const toggleSearch = () => {
+      if (searchTab.classList.contains("open-search-tab")) {
+        closeSearch();
+      } else {
+        searchSm.classList.add("open-search");
+        searchTab.classList.add("open-search-tab");
+        window.innerWidth < 992 && document.body.classList.add("fixed-scroll");
+      }
+    };
+
+    const closeSearch = () => {
+      searchSm.classList.remove("open-search");
+      searchTab.classList.remove("open-search-tab");
+      navList.classList.contains("hide_nav-list") &&
+        document.body.classList.remove("fixed-scroll");
+    };
+
+    const searching = (e) => {
+      const articles = document.querySelectorAll(".article");
+      const searchedArticles = document.getElementById("searched-articles");
+      const allInputs = [...searchInput];
+      const currentInput = allInputs.filter((s) => s.value);
+      const searchQuery = currentInput[0] ? currentInput[0].value : "";
+      const searchArray = [];
+      allInputs.forEach((input) => (input.value = e.target.value));
+
+      articles.forEach((article) => {
+        if (
+          article.innerText.toLowerCase().includes(searchQuery.toLowerCase()) &&
+          searchQuery !== ""
+        ) {
+          searchArray.push({
+            title: article.innerText,
+            body: searchFound(article),
+          });
+        }
+      });
+
+      searchedArticles.innerHTML =
+        searchArray.length === 0
+          ? noSearchFound()
+          : searchArray.map((arr) => arr.body).join(" ");
+    };
+
+    function searchFound(article) {
+      const publishedDate = article.nextElementSibling;
+      return `<div class="mt-40 border-bottom">
+      <h4 class="heading mb-4 mt-5 mt-sm-0">
+        ${article.innerText}
+      </h4>
+      <p class="mb-2 text-small">${publishedDate.innerText}</p>
+      <p class="mb-2rem text-small">
+        ${truncate(publishedDate.nextElementSibling.innerText, 80)}
+      </p>
+    </div>`;
+    }
+
+    function noSearchFound() {
+      return `<div class="mt-40 text-white border-bottom">
+      <p class="mb-2rem text-small">No Search found</p>
+    </div>`;
+    }
+
+    const timing = (e) => {
+      clearTimeout(timer);
+      timer = setTimeout(searching, 500, e);
+    };
+
+    //event listeners
+    searchBox.forEach((el) => el.addEventListener("click", toggleSearch));
+    tabWrapper.addEventListener("click", closeSearch);
+    searchInput.forEach((input) => {
+      input.addEventListener("input", timing);
+      input.addEventListener("keyup", timing);
     });
   }
+  handleSearch();
 
-  function timing() {
-    clearTimeout(timer);
-    timer = setTimeout(search, 500);
+  // <---------- IMPLEMENTING ARTICLE TRUNCATE ------------>
+  const articleBody = document.querySelectorAll(".article__body");
+  articleBody.forEach(
+    (article) => (article.innerHTML = truncate(article.innerHTML, 350))
+  );
+
+  function truncate(string, limit) {
+    const length = string.length;
+    return length > limit ? `${string.slice(0, limit)}...` : string;
   }
 };

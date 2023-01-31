@@ -14,15 +14,13 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
   </head>
-  <body
-    class="px-xxs-3rem px-xs-3rem px-md-5rem pb-xxs-3rem pb-xs-3rem pb-md-5rem position-relative"
-  >
+  <body class="pb-xxs-3rem pb-xs-3rem pb-md-5rem">
     <main>
       <nav
-        class="bg-black d-flex position-fixed bottom-0 end-0 h-fit h-lg-300 start-0 top-0 p-2rem p-xl-3rem"
+        class="nav-bar bg-black d-flex bottom-0 end-0 h-fit h-lg-300 start-0 top-0 p-2rem p-xl-3rem"
       >
         <div
-          class="d-flex flex-nowrap justify-content-between mw-1400 mx-auto w-100"
+          class="d-flex flex-nowrap justify-content-between mx-auto mw-1400 w-100"
         >
           <a href="#" class="act-hov-foc col-8 col-lg-3 mt-lg-3 mt-xl-4"
             ><img
@@ -30,7 +28,9 @@
               alt="logo"
               class="mh-40 mh-lg-60 mw-300 mw-lg-400 w-100"
           /></a>
-          <span class="d-flex gap-2rem justify-content-end w-fit d-lg-none">
+          <span
+            class="d-flex gap-xxs-1rem gap-xsm-2rem justify-content-end w-fit d-lg-none"
+          >
             <span class="search search-sm d-xsm-flex mt-xsm-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -116,8 +116,16 @@
                 <input
                   type="text"
                   placeholder="search"
-                  class="act-hov-foc bg-black border-0 ms-3 text-white w-100"
+                  class="search-input act-hov-foc bg-black border-0 ms-3 text-white w-100"
                 />
+              </div>
+            </div>
+            <div
+              id="searched-articles"
+              class="mw-700 mx-auto px-xxs-3rem px-xs-3rem px-md-7rem px-lg-5 text-white"
+            >
+              <div class="mt-40 text-white border-bottom">
+                <p class="mb-2rem text-small">No Search found</p>
               </div>
             </div>
           </div>
@@ -208,7 +216,7 @@
                   <input
                     type="text"
                     placeholder="search"
-                    class="act-hov-foc bg-black border-0 ms-3 text-white mw-100"
+                    class="search-input act-hov-foc bg-black border-0 ms-3 text-white mw-100"
                   />
                 </li>
                 <li>
@@ -284,6 +292,145 @@
           </div>
         </div>
       </nav>
+      <section class="mx-xxs-3rem mx-xs-3rem mx-md-7rem">
+        <div
+          class="media d-flex flex-column flex-sm-row align-items-xl-center mb-8rem"
+        >
+          <div class="me-sm-5 text-center">
+            <picture class="d-block mx-auto">
+              <source
+                src="assets/images/posts/Post thumbnail-1.png"
+                type="image/png"
+              />
+              <img
+                class="w-xs-100 w-sm-none article__picture-xs article__picture-sm"
+                src="assets/images/posts/Post thumbnail-1.png"
+                alt=""
+                srcset=""
+              />
+            </picture>
+          </div>
+          <div class="media-body">
+            <h4 class="article heading mb-3 mt-5 mt-sm-0">
+              Wonderful Copenhagen 2021
+            </h4>
+            <p class="mb-1 opacity-65 text-small">Published 12/07/2021</p>
+            <p class="article__body mb-2rem mt-4 default-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+              totam, exercitationem enim excepturi aliquid molestiae dignissimos
+              libero nobis nulla tenetur minus ex reiciendis pariatur quidem
+              sequi! Maxime odio vel iusto, aperiam iste distinctio magnam quam
+              natus labore cumque, molestiae tempore quia nesciunt officia
+              molestias consequuntur quisquam ipsam cupiditate quaerat quibusdam
+              reiciendis, sequi quis. Voluptas nisi ipsam exercitationem nulla
+              atque? Atque consequatur sapiente consectetur voluptas sequi non
+              tenetur inventore magni ex praesentium, ad, provident quos. Optio
+              ex mollitia enim aut error doloribus ut sunt, perferendis minima
+              aliquid sint quo possimus incidunt voluptas temporibus quas itaque
+              molestias numquam magni quibusdam voluptatum facilis voluptates
+              eligendi officia. Cum adipisci, suscipit non officiis rem eius
+              reprehenderit libero quaerat deleniti qui magni aliquam, laborum
+              consequatur, voluptas odio obcaecati enim consectetur sunt at nemo
+              esse ab excepturi! Veritatis praesentium consequatur unde cum
+              architecto alias quibusdam voluptatum provident iusto, repudiandae
+              molestiae velit deleniti laboriosam fuga id qui aspernatur
+              perspiciatis harum quo, amet incidunt dolore assumenda voluptates
+              omnis. Laborum, totam architecto. Enim totam veritatis quam
+              distinctio dolores pariatur eveniet sed perspiciatis neque
+              consectetur explicabo maxime sequi, quis commodi error cumque eum
+              corrupti ipsum quod amet, ipsa fugit? Accusantium sed enim
+              architecto illo voluptatibus odio recusandae officia unde hic,
+              perspiciatis ipsa nulla neque animi laudantium facilis aliquam!
+              Sed fugiat deserunt exercitationem cumque in repudiandae maxime
+              modi veritatis sit debitis ipsam omnis impedit iste sunt,
+              aspernatur neque ea temporibus! Dolore adipisci impedit nisi dicta
+              veniam illo dignissimos tenetur voluptate quos debitis optio
+              quibusdam, reiciendis alias accusamus inventore tempora assumenda
+              commodi incidunt aut perferendis porro architecto libero.
+              Reprehenderit cum suscipit autem perferendis ratione rem voluptas
+              voluptate voluptatibus vero minus ipsam quis quo, dolores, officia
+              beatae labore vitae tenetur. Repellendus modi officia perspiciatis
+              laudantium, facere libero. Obcaecati sequi magni, laudantium
+              placeat, repellendus officiis dolore est animi, exercitationem at
+              itaque alias quod error nulla.
+            </p>
+            <button
+              type="button"
+              class="article-modal btn btn-outline-dark rounded-0 default-text"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+        <div
+          class="media d-flex flex-column flex-sm-row align-items-xl-center mb-8rem"
+        >
+          <div class="me-sm-5 text-center">
+            <picture class="d-block mx-auto">
+              <source
+                src="assets/images/posts/Post thumbnail-1.png"
+                type="image/png"
+              />
+              <img
+                class="w-xs-100 w-sm-none article__picture-xs article__picture-sm"
+                src="assets/images/posts/Post thumbnail-1.png"
+                alt=""
+                srcset=""
+              />
+            </picture>
+          </div>
+          <div class="media-body">
+            <h4 class="article heading mb-3 mt-5 mt-sm-0">
+              Copenhagen, The Beautiful City
+            </h4>
+            <p class="mb-1 opacity-65 text-small">Published 12/07/2021</p>
+            <p class="article__body mb-2rem mt-4 default-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              sint dolorem officia voluptate maiores eligendi, quia debitis.
+              Tenetur, laboriosam accusamus. Cum voluptas praesentium excepturi
+              velit perspiciatis assumenda magni dolorum doloremque fugiat
+              sit,laudantium odio maxime sint optio labore debitis aut eaque id
+              deleniti, reiciendis rerum vel in consequuntur? Doloremque dicta
+              ipsum sit, corporis nulla recusandae, maxime illo assumenda amet
+              nemo accusamus iste ratione. Incidunt maiores repudiandae
+              doloremque nemo voluptate quasi eveniet! Atque obcaecati impedit,
+              ratione dolores soluta dicta veniam adipisci dolore nemo
+              doloribus. Dolores commodi accusamus fugit molestias delectus.
+              Ducimus dignissimos debitis architecto numquam maxime voluptatum
+              ad. Quas mollitia vero reiciendis esse dolore ipsa molestiae
+              provident qui ad, repellat illum numquam error ipsum voluptatem,
+              minus nulla assumenda, quasi doloremque et dolorem doloribus
+              beatae. Quo in voluptates, veritatis libero earum praesentium
+              neque commodi eius autem odit sequi consequuntur vitae excepturi,
+              et voluptatem repellendus consequatur nisi sed! Eos obcaecati quos
+              ullam aspernatur ea error perferendis quo architecto ratione iste
+              cupiditate, quis hic, porro accusamus a. Eligendi aperiam
+              voluptatibus deleniti, est praesentium, excepturi alias dolor
+              deserunt expedita sint sit dolore a sed optio debitis animi ea
+              corrupti! Sed dolor nisi earum at, temporibus tempore veniam
+              recusandae hic a. Suscipit dicta deleniti nulla magni debitis
+              necessitatibus praesentium quas dolores ex quasi modi corrupti a
+              pariatur facere rerum ullam, nesciunt placeat vitae, enim,
+              inventore optio libero explicabo. Et sed nihil, quibusdam ducimus
+              molestias asperiores magnam exercitationem optio error doloribus
+              minima quia ipsa sapiente recusandae commodi atque molestiae
+              fugiat fuga? Reprehenderit cupiditate dolor rerum dolores unde
+              officia architecto aliquid doloremque magnam omnis magni quisquam
+              sunt voluptate sed culpa, iusto repellendus mollitia voluptatum?
+              Adipisci perferendis aut tenetur iure temporibus voluptatem
+              suscipit voluptates similique repellat consequatur pariatur saepe
+              cumque minus nam ipsam natus, delectus non quia! Quod nemo
+              molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+            </p>
+            <button
+              type="button"
+              class="article-modal btn btn-outline-dark rounded-0 default-text"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
