@@ -75,6 +75,10 @@ p.text-small {
   height: 30rem;
 }
 
+body.modal-open main {
+  filter: blur(5px);
+}
+
 @media only screen and (min-width: 576px) {
   .article__picture-sm {
     height: 100%;
@@ -273,6 +277,10 @@ p.text-small {
 .act-hov-foc:focus,
 .act-hov-foc:hover {
   outline: 0;
+}
+
+.end-xs-0 {
+  right: 0;
 }
 
 .gap-xxs-1rem {
@@ -484,6 +492,10 @@ p.text-small {
 }
 
 @media screen and (min-width: 992px) {
+  .end-lg-unset {
+    right: unset;
+  }
+
   .flex-1 > * {
     flex: 1;
   }

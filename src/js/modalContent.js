@@ -21,7 +21,7 @@ export function modalContent(id, src, content) {
           />
         </picture>
         <span
-        class="menu d-inline-flex justify-content-center bottom-0 end-0 top-0 bg-black mh-fit mw-fit p-4 position-absolute"
+        class="menu d-inline-flex justify-content-center bottom-0 end-xs-0 end-lg-unset top-0 bg-black mh-fit mw-fit p-4 position-absolute"
         data-bs-toggle="modal"
         aria-label="Close"
         ><svg
