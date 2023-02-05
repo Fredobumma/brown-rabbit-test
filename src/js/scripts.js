@@ -1,6 +1,9 @@
+import { searchFound, noSearchFound } from "./search.js";
+import { modalContent } from "./modalContent.js";
+
 window.onload = function () {
   // <------------ IMPLEMENTING NAVBAR MENU ------------>
-  function handleMenu() {
+  function handleMenuClick() {
     // variables
     const menus = document.querySelectorAll(".menu");
     const current = document.getElementsByClassName("is_visible");
@@ -39,7 +42,7 @@ window.onload = function () {
     menus.forEach((menu) => menu.addEventListener("click", toggleMenu));
     navList.addEventListener("click", closeMenu);
   }
-  handleMenu();
+  handleMenuClick();
 
   // <---------- IMPLEMENTING SEARCH ------------>
   function handleSearch() {
@@ -97,25 +100,6 @@ window.onload = function () {
           : searchArray.map((arr) => arr.body).join(" ");
     };
 
-    function searchFound(article) {
-      const publishedDate = article.nextElementSibling;
-      return `<div class="mt-40 border-bottom">
-      <h4 class="heading mb-4 mt-5 mt-sm-0">
-        ${article.innerText}
-      </h4>
-      <p class="mb-2 text-small">${publishedDate.innerText}</p>
-      <p class="mb-2rem text-small">
-        ${truncate(publishedDate.nextElementSibling.innerText, 80)}
-      </p>
-    </div>`;
-    }
-
-    function noSearchFound() {
-      return `<div class="mt-40 text-white border-bottom">
-      <p class="mb-2rem text-small">No Search found</p>
-    </div>`;
-    }
-
     const timing = (e) => {
       clearTimeout(timer);
       timer = setTimeout(searching, 500, e);
@@ -131,11 +115,34 @@ window.onload = function () {
   }
   handleSearch();
 
+  // <---------- IMPLEMENTING ARTICLE MODAL ------------>
+  function handleArticleClick() {
+    // variables
+    const articleModal = document.querySelectorAll(".article-modal");
+    const modalContainer =
+      document.getElementsByClassName("modal-container")[0];
+
+    // logic and function
+    articleModal.forEach((article) => {
+      const {
+        firstElementChild: { children: picture },
+        lastElementChild: { children: content },
+      } = article;
+      const {
+        firstElementChild: { src },
+      } = picture[0];
+      const id = article.getAttribute("data-bs-target").slice(1);
+
+      modalContainer.innerHTML += modalContent(id, src, content);
+    });
+  }
+  handleArticleClick();
+
   // <---------- IMPLEMENTING ARTICLE TRUNCATE ------------>
   const articleBody = document.querySelectorAll(".article__body");
-  articleBody.forEach(
-    (article) => (article.innerHTML = truncate(article.innerHTML, 350))
-  );
+  articleBody.forEach((article) => {
+    article.innerHTML = truncate(article.innerHTML, 350);
+  });
 
   function truncate(string, limit) {
     const length = string.length;

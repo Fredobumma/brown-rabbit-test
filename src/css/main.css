@@ -17,6 +17,10 @@ html > body {
   overflow-x: hidden;
 }
 
+html body.modal-open {
+  padding-right: 0 !important;
+}
+
 /* Typography */
 h1.heading {
   font-size: 4rem;
@@ -59,6 +63,16 @@ p.text-small {
 
 .article__body {
   max-width: 50ch;
+}
+
+.is_blurred {
+  position: fixed;
+  width: 100vw;
+  backdrop-filter: blur(3px);
+}
+
+.modal__picture {
+  height: 30rem;
 }
 
 @media only screen and (min-width: 576px) {
@@ -148,6 +162,7 @@ p.text-small {
   margin: 0 auto;
   opacity: 1;
   padding-top: 10rem;
+  position: fixed;
   top: 0;
   visibility: visible;
   width: 100%;
@@ -156,6 +171,7 @@ p.text-small {
 #tab-wrapper {
   background-color: transparent;
   bottom: 0;
+  height: 100vh;
   right: 0;
   top: 0;
   width: 100vw;
@@ -179,6 +195,7 @@ p.text-small {
   left: 0;
   max-height: max-content;
   padding: 1.5rem 0 0 2rem;
+  position: fixed;
   top: min(4%, 60px);
   transition: transform 0.3s ease-out;
   width: 100vw;
@@ -238,7 +255,7 @@ p.text-small {
   .open-search-tab #tab-wrapper {
     right: -200%;
     top: -50%;
-    height: 100vh;
+    height: 100%;
     width: 300vw;
   }
 
@@ -248,6 +265,10 @@ p.text-small {
 }
 
 /* Custom Styles */
+.btn.btn-outline-dark:hover {
+  background-color: black;
+}
+
 .act-hov-foc:active,
 .act-hov-foc:focus,
 .act-hov-foc:hover {
@@ -309,9 +330,17 @@ p.text-small {
   max-height: 5rem;
 }
 
+.mh-fit {
+  max-height: fit-content;
+}
+
 .mx-xxs-3rem {
   margin-left: min(3%, 3rem);
   margin-right: min(3%, 3rem);
+}
+
+.mt-2rem {
+  margin-top: 2rem;
 }
 
 .mt-35 {
@@ -340,6 +369,10 @@ p.text-small {
 
 .mw-1400 {
   max-width: 140rem;
+}
+
+.mw-fit {
+  max-width: fit-content;
 }
 
 .my-7rem {
@@ -386,11 +419,6 @@ p.text-small {
 
 .w-fit {
   width: fit-content;
-}
-
-.w-xs-100 {
-  width: 100%;
-  height: auto;
 }
 
 @media screen and (min-width: 375px) {
