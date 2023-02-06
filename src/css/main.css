@@ -13,7 +13,7 @@ html > body {
   font-family: "Times New Roman", Times, serif;
   font-size: 2rem;
   margin: 0 auto;
-  max-width: 140rem;
+  max-width: 160rem;
   overflow-x: hidden;
 }
 
@@ -77,6 +77,10 @@ p.text-small {
 
 body.modal-open main {
   filter: blur(5px);
+}
+
+.modal .modal-dialog {
+  max-width: 600px;
 }
 
 @media only screen and (min-width: 576px) {
@@ -268,6 +272,51 @@ body.modal-open main {
   }
 }
 
+/* Hero */
+.carousel-caption {
+  bottom: -50%;
+  left: 0;
+  margin-bottom: 5rem;
+  margin-top: -7rem;
+  position: relative;
+  right: 0;
+}
+
+.caption-text {
+  margin: 0 auto;
+  max-width: 40pc;
+}
+
+.carousel-icons {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .carousel-caption {
+    margin-bottom: 7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-caption {
+    margin-bottom: 10rem;
+    margin-top: -8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .carousel-caption {
+    margin-bottom: 10rem;
+    margin-top: -10rem;
+  }
+
+  .caption-text {
+    margin: 0;
+    text-align: start;
+  }
+}
+
 /* Custom Styles */
 .btn.btn-outline-dark:hover {
   background-color: black;
@@ -334,6 +383,10 @@ body.modal-open main {
   max-height: 4rem;
 }
 
+.mh-50vh {
+  max-height: 50vh;
+}
+
 .mh-50 {
   max-height: 5rem;
 }
@@ -371,8 +424,16 @@ body.modal-open main {
   max-width: 40rem;
 }
 
+.mw-600 {
+  max-width: 60rem;
+}
+
 .mw-700 {
   max-width: 70rem;
+}
+
+.mw-1200 {
+  max-width: 1200px;
 }
 
 .mw-1400 {
@@ -388,6 +449,10 @@ body.modal-open main {
   margin-top: 7rem;
 }
 
+.object-cover {
+  object-fit: cover;
+}
+
 .opacity-40 {
   opacity: 0.4;
 }
@@ -398,6 +463,10 @@ body.modal-open main {
 
 .p-2rem {
   padding: 2rem;
+}
+
+.p-xxs-3rem {
+  padding: 3rem;
 }
 
 .pb-1rem {
@@ -447,6 +516,14 @@ body.modal-open main {
     margin-right: 3rem;
   }
 
+  .p-xs-4rem {
+    padding: 4rem;
+  }
+
+  .p-xs-4rem {
+    padding: 4rem;
+  }
+
   .pb-xs-3rem {
     padding-bottom: 3rem;
   }
@@ -470,6 +547,10 @@ body.modal-open main {
 @media screen and (min-width: 768px) {
   .mb-lg-55 {
     margin-bottom: 5.5rem;
+  }
+
+  .mh-md-450 {
+    max-height: 450px;
   }
 
   .mt-md-4rem {
@@ -517,12 +598,24 @@ body.modal-open main {
     max-height: 6rem;
   }
 
+  .mh-lg-600 {
+    max-height: 600px;
+  }
+
+  .mt-lg-n18rem {
+    margin-top: -18rem;
+  }
+
   .mw-lg-400 {
     max-width: 40rem;
   }
 
   .p-lg-5rem {
     padding: 5rem;
+  }
+
+  .p-lg-7rem {
+    padding: 7rem;
   }
 
   .pb-lg-25 {

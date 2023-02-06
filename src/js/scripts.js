@@ -1,5 +1,6 @@
 import { searchFound, noSearchFound } from "./search.js";
 import { modalContent } from "./modalContent.js";
+import { captions } from "./heroCaptions.js";
 
 window.onload = function () {
   // <------------ IMPLEMENTING NAVBAR MENU ------------>
@@ -137,6 +138,30 @@ window.onload = function () {
     });
   }
   handleArticleClick();
+
+  // <---------- IMPLEMENTING HERO CAPTIONS ----------->
+  function handleHeroSlide() {
+    // variables
+    const heroItems = document.querySelectorAll(".carousel-item");
+    const carouselCaption =
+      document.getElementsByClassName("carousel-caption")[0];
+    const navigators = document.querySelectorAll(".navigators");
+    carouselCaption.innerHTML = captions[0];
+
+    // logic and function
+    const navigate = () => {
+      heroItems.forEach((item, i) => {
+        if (item.classList.contains("active")) {
+          carouselCaption.innerHTML =
+            captions[i === captions.length - 1 ? 0 : i + 1];
+        }
+      });
+    };
+
+    //event listeners
+    navigators.forEach((nav) => nav.addEventListener("click", navigate));
+  }
+  handleHeroSlide();
 
   // <---------- IMPLEMENTING ARTICLE TRUNCATE ------------>
   const articleBody = document.querySelectorAll(".article__body");
