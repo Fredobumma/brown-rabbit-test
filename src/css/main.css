@@ -54,11 +54,41 @@ p.text-small {
   padding: 1rem 2rem;
 }
 
+.article-navigation.btn.default-text {
+  padding: 1rem 1.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .article-navigation.btn.default-text {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h2.heading {
+    font-size: 3rem;
+  }
+
+  h3.heading,
+  .nav__link {
+    font-size: 2.5rem;
+  }
+
+  h4.heading {
+    font-size: 3rem;
+    font-weight: normal;
+  }
+}
+
 /* Article */
 .article__picture-xs {
   height: 20rem;
   max-height: auto;
   object-fit: cover;
+}
+
+.media-body {
+  max-width: 50rem;
 }
 
 .article__body {
@@ -367,8 +397,8 @@ body.modal-open main {
   margin-bottom: 2rem;
 }
 
-.mb-8rem {
-  margin-bottom: 8rem;
+.mb-5rem {
+  margin-bottom: 5rem;
 }
 
 .mb-25 {
@@ -393,6 +423,10 @@ body.modal-open main {
 
 .mh-fit {
   max-height: fit-content;
+}
+
+.min-70 {
+  min-width: 70px;
 }
 
 .mx-xxs-3rem {
@@ -473,6 +507,10 @@ body.modal-open main {
   padding-bottom: 1rem;
 }
 
+.pb-5rem {
+  padding-bottom: 5rem;
+}
+
 .pb-10rem {
   padding-bottom: 10rem;
 }
@@ -488,6 +526,11 @@ body.modal-open main {
 .px-xxs-3rem {
   padding-left: min(3%, 3rem);
   padding-right: min(3%, 3rem);
+}
+
+.py-35 {
+  padding-bottom: 3.5rem;
+  padding-top: 3.5rem;
 }
 
 .position-xs-absolute {
@@ -581,6 +624,10 @@ body.modal-open main {
     flex: 1;
   }
 
+  .gap-lg-5rem {
+    gap: 5rem;
+  }
+
   .gap-x-auto {
     column-gap: min(10%, 50px);
   }
@@ -602,8 +649,8 @@ body.modal-open main {
     max-height: 600px;
   }
 
-  .mt-lg-n18rem {
-    margin-top: -18rem;
+  .mt-lg-n19rem {
+    margin-top: -19rem;
   }
 
   .mw-lg-400 {

@@ -5,7 +5,8 @@ export function modalContent(id, src, content) {
   tabindex="-1"
   aria-labelledby="exampleModalLabel"
   aria-hidden="true"
-  data-bs-toggle="modal"
+  data-bs-dismiss="modal"
+  data-bs-backdrop="static"
   aria-label="Close"
 >
   <div class="modal-dialog m-0 mx-auto my-sm-5">
@@ -22,7 +23,7 @@ export function modalContent(id, src, content) {
         </picture>
         <span
         class="menu d-inline-flex justify-content-center bottom-0 end-xs-0 end-lg-unset top-0 bg-black mh-fit mw-fit p-4 position-absolute"
-        data-bs-toggle="modal"
+        data-bs-dismiss="modal"
         aria-label="Close"
         ><svg
           xmlns="http://www.w3.org/2000/svg"

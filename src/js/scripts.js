@@ -10,14 +10,13 @@ window.onload = function () {
     const current = document.getElementsByClassName("is_visible");
     const navList = document.getElementsByClassName("nav-list")[0];
 
-    //logic and functions
+    //logic and function(s)
     function toggleMenu() {
       current[0].classList.remove("is_visible");
       this.classList.add("is_visible");
 
-      if (this.classList.contains("close_icon")) {
-        closeNav();
-      } else {
+      if (this.classList.contains("close_icon")) closeNav();
+      else {
         navList.classList.remove("hide_nav-list");
         window.innerWidth < 992 && document.body.classList.add("fixed-scroll");
       }
@@ -30,6 +29,7 @@ window.onload = function () {
             ? menu.classList.add("is_visible")
             : current[0].classList.remove("is_visible");
         });
+
         closeNav();
       }
     };
@@ -56,11 +56,10 @@ window.onload = function () {
     const searchInput = document.querySelectorAll(".search-input");
     let timer;
 
-    //logic and functions
+    //logic and function(s)
     const toggleSearch = () => {
-      if (searchTab.classList.contains("open-search-tab")) {
-        closeSearch();
-      } else {
+      if (searchTab.classList.contains("open-search-tab")) closeSearch();
+      else {
         searchSm.classList.add("open-search");
         searchTab.classList.add("open-search-tab");
         window.innerWidth < 992 && document.body.classList.add("fixed-scroll");
@@ -116,6 +115,30 @@ window.onload = function () {
   }
   handleSearch();
 
+  // <---------- IMPLEMENTING HERO CAPTIONS ----------->
+  function handleHeroSlide() {
+    // variables
+    const heroItems = document.querySelectorAll(".carousel-item");
+    const carouselCaption =
+      document.getElementsByClassName("carousel-caption")[0];
+    const navigators = document.querySelectorAll(".navigators");
+
+    // logic and function(s)
+    carouselCaption.innerHTML = captions[0];
+
+    const navigate = () => {
+      heroItems.forEach((item, i) => {
+        if (item.classList.contains("active"))
+          carouselCaption.innerHTML =
+            captions[i === captions.length - 1 ? 0 : i + 1];
+      });
+    };
+
+    //event listeners
+    navigators.forEach((nav) => nav.addEventListener("click", navigate));
+  }
+  handleHeroSlide();
+
   // <---------- IMPLEMENTING ARTICLE MODAL ------------>
   function handleArticleClick() {
     // variables
@@ -123,7 +146,7 @@ window.onload = function () {
     const modalContainer =
       document.getElementsByClassName("modal-container")[0];
 
-    // logic and function
+    // logic and function(s)
     articleModal.forEach((article) => {
       const {
         firstElementChild: { children: picture },
@@ -139,35 +162,55 @@ window.onload = function () {
   }
   handleArticleClick();
 
-  // <---------- IMPLEMENTING HERO CAPTIONS ----------->
-  function handleHeroSlide() {
+  // <---------- IMPLEMENTING PAGINATION ----------->
+  function handlePagination() {
     // variables
-    const heroItems = document.querySelectorAll(".carousel-item");
-    const carouselCaption =
-      document.getElementsByClassName("carousel-caption")[0];
-    const navigators = document.querySelectorAll(".navigators");
-    carouselCaption.innerHTML = captions[0];
+    const articleModal = document.querySelectorAll(".article-modal");
+    const navigators = document.querySelectorAll(".article-navigation");
+    const articlePages = document.getElementsByClassName("page-count")[0];
+    const currentPage = document.getElementsByClassName("current-page")[0];
+    const pageCount = Math.ceil(articleModal.length / 4);
 
-    // logic and function
-    const navigate = () => {
-      heroItems.forEach((item, i) => {
-        if (item.classList.contains("active")) {
-          carouselCaption.innerHTML =
-            captions[i === captions.length - 1 ? 0 : i + 1];
-        }
-      });
+    // logic and function(s)
+    articlePages.innerHTML = pageCount;
+    paginate(currentPage.innerHTML);
+
+    const navigate = (e) => {
+      if (e.target.innerText === "Next")
+        currentPage.innerHTML =
+          currentPage.innerHTML >= pageCount
+            ? 1
+            : Number(currentPage.innerHTML) + 1;
+      else
+        currentPage.innerHTML =
+          currentPage.innerHTML <= 1
+            ? pageCount
+            : Number(currentPage.innerHTML) - 1;
+
+      paginate(currentPage.innerHTML);
     };
+
+    function paginate(currentPage) {
+      const startNumber = (currentPage - 1) * 4;
+      const endNumber = currentPage * 4;
+
+      articleModal.forEach(({ classList }, i) =>
+        i >= startNumber && i < endNumber
+          ? classList.remove("d-none")
+          : classList.add("d-none")
+      );
+    }
 
     //event listeners
     navigators.forEach((nav) => nav.addEventListener("click", navigate));
   }
-  handleHeroSlide();
+  handlePagination();
 
   // <---------- IMPLEMENTING ARTICLE TRUNCATE ------------>
   const articleBody = document.querySelectorAll(".article__body");
-  articleBody.forEach((article) => {
-    article.innerHTML = truncate(article.innerHTML, 350);
-  });
+  articleBody.forEach(
+    (article) => (article.innerHTML = truncate(article.innerHTML, 350))
+  );
 
   function truncate(string, limit) {
     const length = string.length;
