@@ -15,7 +15,1902 @@
     <link rel="stylesheet" href="css/main.css" type="text/css" />
   </head>
   <body class="pb-xxs-3rem pb-xs-3rem pb-md-5rem pb-lg-7rem pb-xl-10rem">
-    <main></main>
+    <main>
+      <nav
+        class="nav-bar bg-black d-flex bottom-0 end-0 h-fit h-lg-300 start-0 top-0 p-2rem p-xl-3rem"
+      >
+        <div
+          class="d-flex flex-nowrap justify-content-between mx-auto mw-1400 w-100"
+        >
+          <a href="#" class="act-hov-foc col-8 col-lg-3 mt-lg-3 mt-xl-4"
+            ><img
+              src="assets/logo-white.png"
+              alt="logo"
+              class="mh-40 mh-lg-60 mw-300 mw-lg-400 w-100"
+          /></a>
+          <span
+            class="d-flex gap-xxs-1rem gap-xsm-2rem justify-content-end w-fit d-lg-none"
+          >
+            <span class="search search-sm d-xsm-flex mt-xsm-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16.899"
+                height="16.192"
+                viewBox="0 0 16.899 16.192"
+              >
+                <g
+                  id="search"
+                  transform="translate(-162.837 -45.603)"
+                  fill="none"
+                >
+                  <path
+                    d="M174.787,57.552a6.993,6.993,0,1,1,.657-.757l4.292,4.293-.706.707Z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M 169.8372039794922 58.60295104980469 C 171.4397735595703 58.60295104980469 172.9465942382812 57.97870254516602 174.0800933837891 56.8452033996582 L 174.3862609863281 56.53902053833008 L 174.6438293457031 56.19544219970703 C 175.5008087158203 55.05228424072266 175.9197540283203 53.63264083862305 175.8235015869141 52.19804382324219 C 175.7263793945312 50.75037384033203 175.1072235107422 49.38743209838867 174.0800933837891 48.36030197143555 C 172.9465942382812 47.22680282592773 171.4397735595703 46.60255432128906 169.8372039794922 46.60255432128906 C 168.2346496582031 46.60255432128906 166.7278137207031 47.22680282592773 165.5943145751953 48.36031341552734 C 164.4612426757812 49.49338150024414 163.8372344970703 51.00004196166992 163.8372344970703 52.60275268554688 C 163.8372344970703 54.20546340942383 164.4612426757812 55.71212387084961 165.5943145751953 56.84519195556641 C 166.7278137207031 57.97870254516602 168.2346496582031 58.60295104980469 169.8372039794922 58.60295104980469 M 179.0298004150391 61.79490280151367 L 174.7872009277344 57.55230331420898 C 173.4201049804688 58.91940307617188 171.6286468505859 59.60295104980469 169.8372039794922 59.60295104980469 C 168.0457611083984 59.60295104980469 166.2543029785156 58.91940307617188 164.88720703125 57.55230331420898 C 162.1539001464844 54.81900405883789 162.1539001464844 50.38650131225586 164.88720703125 47.65320205688477 C 166.2543029785156 46.28610229492188 168.0457611083984 45.60255432128906 169.8372039794922 45.60255432128906 C 171.6286468505859 45.60255432128906 173.4201049804688 46.28610229492188 174.7872009277344 47.65320205688477 C 177.2804412841797 50.14643096923828 177.4992218017578 54.05368423461914 175.4439544677734 56.79527282714844 L 179.7362976074219 61.08840179443359 L 179.0298004150391 61.79490280151367 Z"
+                    stroke="none"
+                    fill="#fff"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span class="menu d-xsm-flex mt-xsm-5">
+              <svg
+                width="28"
+                height="22"
+                viewBox="0 0 28 21.213"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="28" height="2" rx="1" fill="#fff" />
+                <rect y="12" width="28" height="2" rx="1" fill="#fff" />
+              </svg>
+            </span>
+            <span class="menu close_icon d-xsm-flex mt-xsm-5 is_visible"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="22"
+                viewBox="0 0 28 21.213"
+              >
+                <path
+                  id="close"
+                  d="M2091.2,9.9l-9.9,9.9,9.9-9.9L2081.3,0l9.9,9.9,9.9-9.9-9.9,9.9,9.9,9.9Z"
+                  transform="translate(-2080.594 0.707)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </span>
+          <div class="search-tab position-absolute bg-black">
+            <div class="position-absolute" id="tab-wrapper"></div>
+            <div class="mw-700 mx-auto px-xxs-3rem px-xs-3rem px-md-5rem">
+              <div
+                class="border-bottom text-nowrap pb-3 d-lg-none position-relative search--field overflow-hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16.899"
+                  height="16.192"
+                  viewBox="0 0 16.899 16.192"
+                >
+                  <g
+                    id="search-1"
+                    transform="translate(-162.837 -45.603)"
+                    fill="none"
+                  >
+                    <path
+                      d="M174.787,57.552a6.993,6.993,0,1,1,.657-.757l4.292,4.293-.706.707Z"
+                      stroke="none"
+                    />
+                    <path
+                      d="M 169.8372039794922 58.60295104980469 C 171.4397735595703 58.60295104980469 172.9465942382812 57.97870254516602 174.0800933837891 56.8452033996582 L 174.3862609863281 56.53902053833008 L 174.6438293457031 56.19544219970703 C 175.5008087158203 55.05228424072266 175.9197540283203 53.63264083862305 175.8235015869141 52.19804382324219 C 175.7263793945312 50.75037384033203 175.1072235107422 49.38743209838867 174.0800933837891 48.36030197143555 C 172.9465942382812 47.22680282592773 171.4397735595703 46.60255432128906 169.8372039794922 46.60255432128906 C 168.2346496582031 46.60255432128906 166.7278137207031 47.22680282592773 165.5943145751953 48.36031341552734 C 164.4612426757812 49.49338150024414 163.8372344970703 51.00004196166992 163.8372344970703 52.60275268554688 C 163.8372344970703 54.20546340942383 164.4612426757812 55.71212387084961 165.5943145751953 56.84519195556641 C 166.7278137207031 57.97870254516602 168.2346496582031 58.60295104980469 169.8372039794922 58.60295104980469 M 179.0298004150391 61.79490280151367 L 174.7872009277344 57.55230331420898 C 173.4201049804688 58.91940307617188 171.6286468505859 59.60295104980469 169.8372039794922 59.60295104980469 C 168.0457611083984 59.60295104980469 166.2543029785156 58.91940307617188 164.88720703125 57.55230331420898 C 162.1539001464844 54.81900405883789 162.1539001464844 50.38650131225586 164.88720703125 47.65320205688477 C 166.2543029785156 46.28610229492188 168.0457611083984 45.60255432128906 169.8372039794922 45.60255432128906 C 171.6286468505859 45.60255432128906 173.4201049804688 46.28610229492188 174.7872009277344 47.65320205688477 C 177.2804412841797 50.14643096923828 177.4992218017578 54.05368423461914 175.4439544677734 56.79527282714844 L 179.7362976074219 61.08840179443359 L 179.0298004150391 61.79490280151367 Z"
+                      stroke="none"
+                      fill="#fff"
+                    />
+                  </g>
+                </svg>
+                <input
+                  type="text"
+                  placeholder="search"
+                  class="search-input act-hov-foc bg-black border-0 ms-3 text-white w-100"
+                />
+              </div>
+            </div>
+            <div
+              id="searched-articles"
+              class="mw-700 mx-auto px-xxs-3rem px-xs-3rem px-md-7rem px-lg-5 text-white"
+            >
+              <div class="mt-40 text-white border-bottom">
+                <p class="mb-2rem text-small">No Search found</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col position-xs-absolute position-lg-unset d-lg-block nav-list hide_nav-list"
+          >
+            <div class="d-flex flex-column gap-2rem">
+              <ul
+                class="nav flex-column flex-nowrap flex-lg-row gap-2rem justify-content-lg-end position-relative order-lg-last"
+              >
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="act-hov-foc nav-link ms-3 mx-4 ms-lg-4 px-0 text-white"
+                    aria-current="page"
+                    >About us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="act-hov-foc nav-link ms-3 mx-4 ms-lg-4 px-0 text-white"
+                    aria-current="page"
+                    >Events</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="act-hov-foc nav-link ms-3 mx-4 ms-lg-4 px-0 text-white"
+                    aria-current="page"
+                    >Nordic roaster</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="act-hov-foc nav-link ms-3 mx-4 ms-lg-4 px-0 text-white"
+                    aria-current="page"
+                    >Results</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="act-hov-foc nav-link ms-3 mx-4 ms-lg-4 px-0 text-white"
+                    aria-current="page"
+                    >Links</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="act-hov-foc nav-link ms-3 mx-4 ms-lg-4 px-0 text-white"
+                    aria-current="page"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <ul
+                class="nav nav-list_socials gap-2rem justify-content-center justify-content-lg-end me-lg-4 position-xs-absolute position-lg-unset"
+              >
+                <li
+                  class="search d-none d-lg-block border-bottom mw-250 text-nowrap pb-2 overflow-hidden"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16.899"
+                    height="16.192"
+                    viewBox="0 0 16.899 16.192"
+                  >
+                    <g
+                      id="search"
+                      transform="translate(-162.837 -45.603)"
+                      fill="none"
+                    >
+                      <path
+                        d="M174.787,57.552a6.993,6.993,0,1,1,.657-.757l4.292,4.293-.706.707Z"
+                        stroke="none"
+                      />
+                      <path
+                        d="M 169.8372039794922 58.60295104980469 C 171.4397735595703 58.60295104980469 172.9465942382812 57.97870254516602 174.0800933837891 56.8452033996582 L 174.3862609863281 56.53902053833008 L 174.6438293457031 56.19544219970703 C 175.5008087158203 55.05228424072266 175.9197540283203 53.63264083862305 175.8235015869141 52.19804382324219 C 175.7263793945312 50.75037384033203 175.1072235107422 49.38743209838867 174.0800933837891 48.36030197143555 C 172.9465942382812 47.22680282592773 171.4397735595703 46.60255432128906 169.8372039794922 46.60255432128906 C 168.2346496582031 46.60255432128906 166.7278137207031 47.22680282592773 165.5943145751953 48.36031341552734 C 164.4612426757812 49.49338150024414 163.8372344970703 51.00004196166992 163.8372344970703 52.60275268554688 C 163.8372344970703 54.20546340942383 164.4612426757812 55.71212387084961 165.5943145751953 56.84519195556641 C 166.7278137207031 57.97870254516602 168.2346496582031 58.60295104980469 169.8372039794922 58.60295104980469 M 179.0298004150391 61.79490280151367 L 174.7872009277344 57.55230331420898 C 173.4201049804688 58.91940307617188 171.6286468505859 59.60295104980469 169.8372039794922 59.60295104980469 C 168.0457611083984 59.60295104980469 166.2543029785156 58.91940307617188 164.88720703125 57.55230331420898 C 162.1539001464844 54.81900405883789 162.1539001464844 50.38650131225586 164.88720703125 47.65320205688477 C 166.2543029785156 46.28610229492188 168.0457611083984 45.60255432128906 169.8372039794922 45.60255432128906 C 171.6286468505859 45.60255432128906 173.4201049804688 46.28610229492188 174.7872009277344 47.65320205688477 C 177.2804412841797 50.14643096923828 177.4992218017578 54.05368423461914 175.4439544677734 56.79527282714844 L 179.7362976074219 61.08840179443359 L 179.0298004150391 61.79490280151367 Z"
+                        stroke="none"
+                        fill="#fff"
+                      />
+                    </g>
+                  </svg>
+                  <input
+                    type="text"
+                    placeholder="search"
+                    class="search-input act-hov-foc bg-black border-0 ms-3 text-white mw-100"
+                  />
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15.573"
+                      height="15.573"
+                      viewBox="0 0 15.573 15.573"
+                    >
+                      <path
+                        id="linkedin"
+                        d="M3.486,15.583H.257V5.186H3.486ZM1.87,3.767A1.879,1.879,0,1,1,3.74,1.88,1.886,1.886,0,0,1,1.87,3.767Zm13.7,11.815H12.348V10.522c0-1.206-.024-2.753-1.679-2.753-1.679,0-1.936,1.311-1.936,2.666v5.148H5.508V5.186H8.6V6.6H8.65A3.393,3.393,0,0,1,11.7,4.925c3.268,0,3.868,2.152,3.868,4.947v5.711Z"
+                        transform="translate(0 -0.01)"
+                        fill="#fff"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19.174"
+                      height="15.573"
+                      viewBox="0 0 19.174 15.573"
+                    >
+                      <path
+                        id="twitter"
+                        d="M17.2,51.963c.012.17.012.341.012.511A11.1,11.1,0,0,1,6.034,63.655,11.105,11.105,0,0,1,0,61.891a8.13,8.13,0,0,0,.949.049A7.87,7.87,0,0,0,5.828,60.26a3.937,3.937,0,0,1-3.674-2.725A4.955,4.955,0,0,0,2.9,57.6a4.156,4.156,0,0,0,1.034-.134A3.93,3.93,0,0,1,.779,53.606v-.049a3.958,3.958,0,0,0,1.776.5A3.936,3.936,0,0,1,1.338,48.8a11.17,11.17,0,0,0,8.1,4.112,4.436,4.436,0,0,1-.1-.9,3.933,3.933,0,0,1,6.8-2.689,7.737,7.737,0,0,0,2.494-.949,3.919,3.919,0,0,1-1.728,2.166,7.878,7.878,0,0,0,2.263-.608A8.447,8.447,0,0,1,17.2,51.963Z"
+                        transform="translate(0 -48.082)"
+                        fill="#fff"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15.576"
+                      height="15.573"
+                      viewBox="0 0 15.576 15.573"
+                    >
+                      <path
+                        id="instagram"
+                        d="M7.715,35.619a3.993,3.993,0,1,0,3.993,3.993A3.986,3.986,0,0,0,7.715,35.619Zm0,6.588a2.6,2.6,0,1,1,2.6-2.6,2.6,2.6,0,0,1-2.6,2.6ZM12.8,35.455a.931.931,0,1,1-.931-.931A.929.929,0,0,1,12.8,35.455Zm2.644.945a4.609,4.609,0,0,0-1.258-3.263,4.639,4.639,0,0,0-3.263-1.258c-1.286-.073-5.139-.073-6.425,0a4.632,4.632,0,0,0-3.263,1.254A4.624,4.624,0,0,0-.02,36.4c-.073,1.286-.073,5.139,0,6.425a4.609,4.609,0,0,0,1.258,3.263A4.645,4.645,0,0,0,4.5,47.343c1.286.073,5.139.073,6.425,0a4.609,4.609,0,0,0,3.263-1.258,4.639,4.639,0,0,0,1.258-3.263C15.52,41.537,15.52,37.686,15.447,36.4Zm-1.661,7.8a2.628,2.628,0,0,1-1.48,1.48,17.162,17.162,0,0,1-4.59.313,17.3,17.3,0,0,1-4.59-.313,2.628,2.628,0,0,1-1.48-1.48,17.162,17.162,0,0,1-.313-4.59,17.3,17.3,0,0,1,.313-4.59,2.628,2.628,0,0,1,1.48-1.48,17.162,17.162,0,0,1,4.59-.313,17.3,17.3,0,0,1,4.59.313,2.628,2.628,0,0,1,1.48,1.48,17.163,17.163,0,0,1,.313,4.59A17.153,17.153,0,0,1,13.786,44.2Z"
+                        transform="translate(0.075 -31.825)"
+                        fill="#fff"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8.341"
+                      height="15.573"
+                      viewBox="0 0 8.341 15.573"
+                    >
+                      <path
+                        id="facebook"
+                        d="M30.684,8.76l.433-2.818h-2.7V4.113A1.409,1.409,0,0,1,30,2.59h1.229V.19A14.992,14.992,0,0,0,29.048,0a3.441,3.441,0,0,0-3.683,3.793V5.941H22.89V8.76h2.476v6.813h3.047V8.76Z"
+                        transform="translate(-22.89)"
+                        fill="#fff"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="mw-1400 mb-5 mx-auto mt-lg-n19rem">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <picture class="d-block mx-auto">
+                <source
+                  srcset="assets/images/hero-images/banner-3@x2.webp"
+                  media="(min-width: 992px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/images/hero-images/banner-3.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/images/hero-images/banner-3@x2.jpg"
+                  media="(min-width: 992px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="assets/images/hero-images/banner-3.jpg"
+                  type="image/jpg"
+                />
+                <img
+                  class="h-auto mh-50vh mh-md-450 mh-lg-600 object-cover w-100"
+                  src="assets/images/hero-images/banner-3@x2.jpg"
+                  alt="hero-image-3"
+                />
+              </picture>
+            </div>
+            <div class="carousel-item">
+              <picture class="d-block mx-auto">
+                <source
+                  srcset="assets/images/hero-images/banner-2@x2.webp"
+                  media="(min-width: 992px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/images/hero-images/banner-2.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/images/hero-images/banner-2@x2.jpg"
+                  media="(min-width: 992px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="assets/images/hero-images/banner-2.jpg"
+                  type="image/jpg"
+                />
+                <img
+                  class="h-auto mh-50vh mh-md-450 mh-lg-600 object-cover w-100"
+                  src="assets/images/hero-images/banner-2@x2.jpg"
+                  alt="hero-image-2"
+                />
+              </picture>
+            </div>
+            <div class="carousel-item">
+              <picture class="d-block mx-auto">
+                <source
+                  srcset="assets/images/hero-images/banner-1@x2.webp"
+                  media="(min-width: 992px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/images/hero-images/banner-1.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="assets/images/hero-images/banner-1@x2.jpg"
+                  media="(min-width: 992px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="assets/images/hero-images/banner-1.jpg"
+                  type="image/jpg"
+                />
+                <img
+                  class="h-auto mh-50vh mh-md-450 mh-lg-600 object-cover w-100"
+                  src="assets/images/hero-images/banner-1@x2.jpg"
+                  alt="hero-image-1"
+                />
+              </picture>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev navigators"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon carousel-icons"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next navigators"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon carousel-icons"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div
+          class="carousel-caption bg-black mw-600 mx-xxs-3rem mx-xs-3rem mx-md-7rem p-xxs-3rem p-xs-4rem p-lg-7rem"
+        ></div>
+      </section>
+      <section
+        class="d-lg-flex gap-lg-5rem justify-content-between mw-1200 mx-xxs-3rem mx-xs-3rem mx-md-7rem mx-xl-auto px-xl-10rem"
+      >
+        <div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-1"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-4.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-4.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                Wonderful Copenhagen 2021
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-2"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-1.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-1.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                The most expensive coffee on the market
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-3"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-2.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-2.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                10 type of coffee beans you need to know
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-4"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-3.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-3.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                Please click next to read the rest of my article heading
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-5"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-2.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-2.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                Challenge your barista skills to the max
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-6"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-3.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-3.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                Copenhagen, The Beautiful City
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-7"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-1.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-1.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                Denmark is the best country on the planet
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-8"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-4.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-4.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                I'm not Danish but the Danish culture is amazing!!!
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-9"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-3.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-3.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                I've always loved the Danes, and I support them at World Cups
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-10"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-4.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-4.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                I am grateful for the opportunity at TwentyFour (formerly
+                Html24)
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-11"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-1.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-1.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                I wish for the opportunity to better my skills
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-12"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-2.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-2.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                I really want to see my dedication to coding in a real world
+                application
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-13"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-4.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-4.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                I believe my determination and good work ethics would impact
+                largely at 24
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-14"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-3.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-3.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                Coding is my life, and I can dedicate up to 70 hours a week to
+                get my tasks done
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-15"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-2.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-2.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                I am willing to take on this internship as it is unpaid, because
+                it's more than the money
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div
+            type="button"
+            class="media article-modal d-flex flex-column flex-sm-row align-items-xl-center mb-5rem"
+            data-bs-toggle="modal"
+            data-bs-target="#article-16"
+          >
+            <div class="me-sm-5 text-center">
+              <picture class="d-block mx-auto">
+                <source
+                  src="assets/images/posts/Post thumbnail-1.png"
+                  type="image/png"
+                />
+                <img
+                  class="w-100 w-sm-none article__picture-xs article__picture-sm"
+                  src="assets/images/posts/Post thumbnail-1.png"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+            </div>
+            <div class="media-body">
+              <h4 class="article heading mb-3 mt-5 mt-sm-0 mt-lg-5">
+                No framework specified so I've built with vanilla, now Thank you
+                for reading my article
+              </h4>
+              <p class="opacity-65 text-small">Published 12/07/2021</p>
+              <p class="article__body mb-2rem mt-3 default-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                sint dolorem officia voluptate maiores eligendi, quia debitis.
+                Tenetur, laboriosam accusamus. Cum voluptas praesentium
+                excepturi velit perspiciatis assumenda magni dolorum doloremque
+                fugiat sit,laudantium odio maxime sint optio labore debitis aut
+                eaque id deleniti, reiciendis rerum vel in consequuntur?
+                Doloremque dicta ipsum sit, corporis nulla recusandae, maxime
+                illo assumenda amet nemo accusamus iste ratione. Incidunt
+                maiores repudiandae doloremque nemo voluptate quasi eveniet!
+                Atque obcaecati impedit, ratione dolores soluta dicta veniam
+                adipisci dolore nemo doloribus. Dolores commodi accusamus fugit
+                molestias delectus. Ducimus dignissimos debitis architecto
+                numquam maxime voluptatum ad. Quas mollitia vero reiciendis esse
+                dolore ipsa molestiae provident qui ad, repellat illum numquam
+                error ipsum voluptatem, minus nulla assumenda, quasi doloremque
+                et dolorem doloribus beatae. Quo in voluptates, veritatis libero
+                earum praesentium neque commodi eius autem odit sequi
+                consequuntur vitae excepturi, et voluptatem repellendus
+                consequatur nisi sed! Eos obcaecati quos ullam aspernatur ea
+                error perferendis quo architecto ratione iste cupiditate, quis
+                hic, porro accusamus a. Eligendi aperiam voluptatibus deleniti,
+                est praesentium, excepturi alias dolor deserunt expedita sint
+                sit dolore a sed optio debitis animi ea corrupti! Sed dolor nisi
+                earum at, temporibus tempore veniam recusandae hic a. Suscipit
+                dicta deleniti nulla magni debitis necessitatibus praesentium
+                quas dolores ex quasi modi corrupti a pariatur facere rerum
+                ullam, nesciunt placeat vitae, enim, inventore optio libero
+                explicabo. Et sed nihil, quibusdam ducimus molestias asperiores
+                magnam exercitationem optio error doloribus minima quia ipsa
+                sapiente recusandae commodi atque molestiae fugiat fuga?
+                Reprehenderit cupiditate dolor rerum dolores unde officia
+                architecto aliquid doloremque magnam omnis magni quisquam sunt
+                voluptate sed culpa, iusto repellendus mollitia voluptatum?
+                Adipisci perferendis aut tenetur iure temporibus voluptatem
+                suscipit voluptates similique repellat consequatur pariatur
+                saepe cumque minus nam ipsam natus, delectus non quia! Quod nemo
+                molestiae iste nisi, rem deleniti fuga quia vitae dolorum alias.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 default-text"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <nav
+            class="border border-lg-bottom-0 border-end-0 border-start-0 d-flex justify-content-between gap-2 pt-5 pb-5rem"
+          >
+            <button
+              type="button"
+              class="article-navigation btn btn-outline-dark rounded-0 default-text"
+            >
+              Previous
+            </button>
+            <p class="default-text my-auto h-fit text-center">
+              Page <span class="current-page">1</span> of
+              <span class="page-count"></span>
+            </p>
+            <button
+              type="button"
+              class="article-navigation btn btn-outline-dark rounded-0 default-text min-70"
+            >
+              Next
+            </button>
+          </nav>
+        </div>
+        <div>
+          <div
+            class="border border-top-0 border-end-0 border-start-0 py-35 pt-lg-0"
+          >
+            <h2 class="heading mb-4 mt-lg-5">WBC Shop</h2>
+            <p>Your shopping car is empty</p>
+            <button
+              type="button"
+              class="btn btn-outline-dark rounded-0 default-text mb-3 mt-3"
+            >
+              Visit the shop
+            </button>
+          </div>
+          <div class="border border-end-0 border-start-0 py-35">
+            <h2 class="heading mb-4">Next event</h2>
+            <h3 class="heading">World Barista Cup 2021</h3>
+            <p class="mb-2">Copenhagen, Denmark</p>
+            <p class="mb-2">Dates : 25th - 27th August 2011</p>
+            <p>Theme : SENSORY</p>
+            <button
+              type="button"
+              class="btn btn-outline-dark rounded-0 default-text mb-3 mt-3"
+            >
+              Sign up now
+            </button>
+          </div>
+          <div class="border border-bottom-0 border-end-0 border-start-0 py-35">
+            <h2 class="heading mb-4">Scoreboard</h2>
+            <h3 class="heading mb-4">List of winners from last year</h3>
+            <ul class="list-unstyled mb-3">
+              <li>2021 - ?</li>
+              <li>2020 - Denmark</li>
+              <li>2021 - Sweden</li>
+              <li>2021 - Turkey</li>
+              <li>2021 - Italy</li>
+              <li>2021 - Italy</li>
+              <li>2021 - Germany</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <aside
+        class="border-top pb-8rem pb-lg-10rem pt-4rem mw-1200 mx-xxs-3rem mx-xs-3rem mx-md-7rem mx-xl-auto px-xl-10rem"
+      >
+        <h2 class="heading text-center mb-8rem mb-lg-55">
+          World Barista Cup Sponsors
+        </h2>
+        <span class="d-grid grid-auto-xs grid-auto-lg justify-content-center">
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-20.png"
+            alt="sponsor-20"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-1.png"
+            alt="sponsor-1"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-2.png"
+            alt="sponsor-2"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-3.png"
+            alt="sponsor-3"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-4.png"
+            alt="sponsor-4"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-5.png"
+            alt="sponsor-5"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-6.png"
+            alt="sponsor-6"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-7.png"
+            alt="sponsor-7"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-8.png"
+            alt="sponsor-8"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-9.png"
+            alt="sponsor-9"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-10.png"
+            alt="sponsor-10"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-11.png"
+            alt="sponsor-11"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-12.png"
+            alt="sponsor-12"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-13.png"
+            alt="sponsor-13"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-14.png"
+            alt="sponsor-14"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-15.png"
+            alt="sponsor-15"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-16.png"
+            alt="sponsor-16"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-17.png"
+            alt="sponsor-17"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-18.png"
+            alt="sponsor-18"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-19.png"
+            alt="sponsor-19"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-40.png"
+            alt="sponsor-21"
+          />
+          <img
+            class="sponsor h-auto w-100"
+            src="assets/images/sponsors/sponsor-41.png"
+            alt="sponsor-22"
+          />
+        </span>
+      </aside>
+      <footer
+        class="bg-black mw-1400 mx-xxs-3rem mx-xs-3rem mx-md-7rem mx-xl-auto pb-10rem pt-4rem px-xxs-3rem px-xs-3rem p-lg-5rem px-xl-10rem py-xl-8rem text-center text-white"
+      >
+        <div
+          class="border-bottom d-flex flex-column flex-lg-row justify-content-between align-items-center gap-2 gap-md-0 mb-lg-55 pb-1rem pb-lg-25"
+        >
+          <a href="#" class="d-flex justify-content-center"
+            ><img
+              src="assets/logo-white.png"
+              alt=""
+              class="h-auto mw-400 mh-50 w-100"
+          /></a>
+          <ul class="nav gap-2rem justify-content-center my-5">
+            <li>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15.573"
+                  height="15.573"
+                  viewBox="0 0 15.573 15.573"
+                >
+                  <path
+                    id="linkedin"
+                    d="M3.486,15.583H.257V5.186H3.486ZM1.87,3.767A1.879,1.879,0,1,1,3.74,1.88,1.886,1.886,0,0,1,1.87,3.767Zm13.7,11.815H12.348V10.522c0-1.206-.024-2.753-1.679-2.753-1.679,0-1.936,1.311-1.936,2.666v5.148H5.508V5.186H8.6V6.6H8.65A3.393,3.393,0,0,1,11.7,4.925c3.268,0,3.868,2.152,3.868,4.947v5.711Z"
+                    transform="translate(0 -0.01)"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19.174"
+                  height="15.573"
+                  viewBox="0 0 19.174 15.573"
+                >
+                  <path
+                    id="twitter"
+                    d="M17.2,51.963c.012.17.012.341.012.511A11.1,11.1,0,0,1,6.034,63.655,11.105,11.105,0,0,1,0,61.891a8.13,8.13,0,0,0,.949.049A7.87,7.87,0,0,0,5.828,60.26a3.937,3.937,0,0,1-3.674-2.725A4.955,4.955,0,0,0,2.9,57.6a4.156,4.156,0,0,0,1.034-.134A3.93,3.93,0,0,1,.779,53.606v-.049a3.958,3.958,0,0,0,1.776.5A3.936,3.936,0,0,1,1.338,48.8a11.17,11.17,0,0,0,8.1,4.112,4.436,4.436,0,0,1-.1-.9,3.933,3.933,0,0,1,6.8-2.689,7.737,7.737,0,0,0,2.494-.949,3.919,3.919,0,0,1-1.728,2.166,7.878,7.878,0,0,0,2.263-.608A8.447,8.447,0,0,1,17.2,51.963Z"
+                    transform="translate(0 -48.082)"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15.576"
+                  height="15.573"
+                  viewBox="0 0 15.576 15.573"
+                >
+                  <path
+                    id="instagram"
+                    d="M7.715,35.619a3.993,3.993,0,1,0,3.993,3.993A3.986,3.986,0,0,0,7.715,35.619Zm0,6.588a2.6,2.6,0,1,1,2.6-2.6,2.6,2.6,0,0,1-2.6,2.6ZM12.8,35.455a.931.931,0,1,1-.931-.931A.929.929,0,0,1,12.8,35.455Zm2.644.945a4.609,4.609,0,0,0-1.258-3.263,4.639,4.639,0,0,0-3.263-1.258c-1.286-.073-5.139-.073-6.425,0a4.632,4.632,0,0,0-3.263,1.254A4.624,4.624,0,0,0-.02,36.4c-.073,1.286-.073,5.139,0,6.425a4.609,4.609,0,0,0,1.258,3.263A4.645,4.645,0,0,0,4.5,47.343c1.286.073,5.139.073,6.425,0a4.609,4.609,0,0,0,3.263-1.258,4.639,4.639,0,0,0,1.258-3.263C15.52,41.537,15.52,37.686,15.447,36.4Zm-1.661,7.8a2.628,2.628,0,0,1-1.48,1.48,17.162,17.162,0,0,1-4.59.313,17.3,17.3,0,0,1-4.59-.313,2.628,2.628,0,0,1-1.48-1.48,17.162,17.162,0,0,1-.313-4.59,17.3,17.3,0,0,1,.313-4.59,2.628,2.628,0,0,1,1.48-1.48,17.162,17.162,0,0,1,4.59-.313,17.3,17.3,0,0,1,4.59.313,2.628,2.628,0,0,1,1.48,1.48,17.163,17.163,0,0,1,.313,4.59A17.153,17.153,0,0,1,13.786,44.2Z"
+                    transform="translate(0.075 -31.825)"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8.341"
+                  height="15.573"
+                  viewBox="0 0 8.341 15.573"
+                >
+                  <path
+                    id="facebook"
+                    d="M30.684,8.76l.433-2.818h-2.7V4.113A1.409,1.409,0,0,1,30,2.59h1.229V.19A14.992,14.992,0,0,0,29.048,0a3.441,3.441,0,0,0-3.683,3.793V5.941H22.89V8.76h2.476v6.813h3.047V8.76Z"
+                    transform="translate(-22.89)"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-lg-flex flex-1 gap-x-auto justi text-lg-start">
+          <div class="About-us">
+            <h3
+              class="fw-normal heading mb-2rem mb-md-4 mt-35 mt-md-4rem mt-lg-0"
+            >
+              About World Barista Cup
+            </h3>
+            <p class="fw-lighter lh-sm mb-4 opacity-40 text-small">
+              The vision within <br class="d-md-none" />
+              The World Barista Cup
+            </p>
+            <p class="mb-0 default-text mx-auto mx-lg-0 mw-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim
+              alias veritatis nostrum dolore eligendi voluptatibus iste numquam
+              officiis consequatur ratione placeat in natus ipsam quaerat
+              corporis sit fugiat ad neque labore, officia molestiae dolor magni
+              a. Et aliquid, inventore necessitatibus quidem placeat quam earum.
+            </p>
+          </div>
+          <div class="Instagram-feed my-7rem mt-lg-0">
+            <div class="mx-auto w-fit">
+              <h3 class="fw-normal heading mb-25 w-lg-fit">Instagram feed</h3>
+              <span class="d-grid grid-3x3 gap-3 mx-auto mx-lg-0">
+                <img
+                  src="assets/images/instagram-feed/instagram-image-9.png"
+                  alt="instagram-feedImage-9"
+                />
+                <img
+                  src="assets/images/instagram-feed/instagram-image-1.png"
+                  alt="instagram-feedImage-1"
+                />
+                <img
+                  src="assets/images/instagram-feed/instagram-image-2.png"
+                  alt="instagram-feedImage-2"
+                /><img
+                  src="assets/images/instagram-feed/instagram-image-3.png"
+                  alt="instagram-feedImage-3"
+                /><img
+                  src="assets/images/instagram-feed/instagram-image-4.png"
+                  alt="instagram-feedImage-4"
+                /><img
+                  src="assets/images/instagram-feed/instagram-image-5.png"
+                  alt="instagram-feedImage-5"
+                /><img
+                  src="assets/images/instagram-feed/instagram-image-6.png"
+                  alt="instagram-feedImage-6"
+                /><img
+                  src="assets/images/instagram-feed/instagram-image-7.png"
+                  alt="instagram-feedImage-7"
+                /><img
+                  src="assets/images/instagram-feed/instagram-image-8.png"
+                  alt="instagram-feedImage-8"
+                />
+              </span>
+            </div>
+          </div>
+          <div class="contact-us">
+            <h3 class="fw-normal heading mb-3">Contact</h3>
+            <p class="mb-0 mb-lg-1 default-text">World Barista Cup</p>
+            <p class="mb-0 mb-lg-1 opacity-40 text-small default-text">
+              Amagertorv 13
+            </p>
+            <p class="mb-0 mb-lg-1 opacity-40 text-small default-text">
+              1160 Copenhagen K
+            </p>
+            <p class="mb-0 mb-lg-1 opacity-40 text-small default-text">
+              +45 33 12 04 28
+            </p>
+            <p class="mb-0 mb-lg-1 opacity-40 text-small default-text">
+              CVR: 11427693
+            </p>
+            <p class="mb-0 mb-lg-1 opacity-40 text-small default-text">
+              Email: info@worldbaristacup.com
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
     <div class="modal-container"></div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
