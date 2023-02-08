@@ -11,7 +11,6 @@
   "name": "24_brown_rabbit_frontend_task",
   "description": "This is the job test if you wish to be a web developer at Twentyfour",
   "version": "1.0.0",
-  "main": "index.html",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
