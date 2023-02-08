@@ -224,6 +224,8 @@ body.modal-open main {
 .close-search {
   display: flex;
   margin-left: auto;
+  margin-right: 15%;
+  margin-top: 25px;
   transform: rotate(45deg);
   width: fit-content;
 }
