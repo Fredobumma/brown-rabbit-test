@@ -83,13 +83,16 @@ window.onload = function () {
       allInputs.forEach((input) => (input.value = e.target.value));
 
       articles.forEach((article) => {
+        const {
+          parentElement: { parentElement: articleParent },
+        } = article;
         if (
           article.innerText.toLowerCase().includes(searchQuery.toLowerCase()) &&
           searchQuery !== ""
         ) {
           searchArray.push({
             title: article.innerText,
-            body: searchFound(article),
+            body: searchFound(article, articleParent, truncate),
           });
         }
       });

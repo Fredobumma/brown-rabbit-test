@@ -1,6 +1,9 @@
-export function searchFound(article) {
+export function searchFound(article, parent, truncate) {
   const publishedDate = article.nextElementSibling;
-  return `<div class="article-modal mt-40 border-bottom">
+  return `<div class="searched article-modal mt-40 border-bottom position-relative"
+  type="button"
+  data-bs-toggle="modal"
+  data-bs-target="${parent.getAttribute("data-bs-target")}">
   <h4 class="heading mb-4 mt-5 mt-sm-0">
     ${article.innerText}
   </h4>

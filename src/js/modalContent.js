@@ -43,7 +43,7 @@ export function modalContent(id, src, content) {
       </span>
       </div>
       <div class="modal-body px-xxs-3rem px-xs-3rem px-md-7rem">
-        <h2 class="article heading fw-normal mb-3 mt-5 mt-sm-0">
+        <h2 class="heading fw-normal mb-3 mt-5 mt-sm-0">
           ${content[0].innerText}
         </h2>
         <p class="opacity-65 text-small">${content[1].innerText}</p>

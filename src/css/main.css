@@ -97,10 +97,18 @@ p.text-small {
   max-width: 50ch;
 }
 
+.searched {
+  z-index: 150;
+}
+
 .is_blurred {
   position: fixed;
   width: 100vw;
   backdrop-filter: blur(3px);
+}
+
+.modal {
+  padding-right: 0 !important;
 }
 
 .modal__picture {
@@ -181,18 +189,12 @@ body.modal-open main {
   transition: transform 0.3s ease-in-out;
 }
 
-.open-search.search-sm {
-  margin-top: 0;
-  position: relative;
-  transform: rotate(45deg);
-  z-index: 100;
-}
-
 .search-tab {
   left: -100vw;
   opacity: 0;
   transition: opacity 0.3s ease-out;
-  z-index: 50;
+  visibility: collapse;
+  overflow-x: hidden;
 }
 
 .open-search-tab {
@@ -201,24 +203,37 @@ body.modal-open main {
   left: 0;
   margin: 0 auto;
   opacity: 1;
-  padding-top: 10rem;
+  overflow-y: auto;
   position: fixed;
   top: 0;
   visibility: visible;
   width: 100%;
+  z-index: 50;
 }
 
-#tab-wrapper {
+.open-search-tab #tab-wrapper {
   background-color: transparent;
   bottom: 0;
   height: 100vh;
   right: 0;
-  top: 0;
+  top: 0%;
   width: 100vw;
   z-index: 60;
 }
 
+.close-search {
+  display: flex;
+  margin-left: auto;
+  transform: rotate(45deg);
+  width: fit-content;
+}
+
 .search--field {
+  visibility: collapse;
+}
+
+.open-search-tab .search--field {
+  visibility: visible;
   z-index: 70;
 }
 
@@ -233,10 +248,11 @@ body.modal-open main {
   background-color: black;
   height: 100vh;
   left: 0;
+  margin-top: 65px;
   max-height: max-content;
   padding: 1.5rem 0 0 2rem;
   position: fixed;
-  top: min(4%, 60px);
+  top: 0;
   transition: transform 0.3s ease-out;
   width: 100vw;
   z-index: 30;
@@ -258,15 +274,10 @@ body.modal-open main {
   width: 100vw;
 }
 
-@media screen and (min-width: 576px) {
-  .nav-list {
-    top: max(4%, 60px);
-  }
-}
-
 @media screen and (min-width: 992px) {
   .nav-list {
     height: fit-content;
+    margin-top: 0;
     padding: 0;
   }
 
@@ -294,8 +305,8 @@ body.modal-open main {
 
   .open-search-tab #tab-wrapper {
     right: -200%;
-    top: -50%;
-    height: 100%;
+    top: -40%;
+    height: 150vh;
     width: 300vw;
   }
 
@@ -475,6 +486,10 @@ body.modal-open main {
   margin-top: 4rem;
 }
 
+.mt-10rem {
+  margin-top: 10rem;
+}
+
 .mw-250 {
   max-width: 25rem;
 }
@@ -548,12 +563,12 @@ body.modal-open main {
   padding-bottom: 10rem;
 }
 
-.pt-4rem {
-  padding-top: 4rem;
-}
-
 .pb-xxs-3rem {
   padding-bottom: min(3%, 3rem);
+}
+
+.pt-4rem {
+  padding-top: 4rem;
 }
 
 .px-xxs-3rem {
@@ -716,6 +731,10 @@ body.modal-open main {
 
   .px-lg-7rem {
     padding: 0 7rem;
+  }
+
+  .position-lg-fixed {
+    position: fixed;
   }
 
   .position-lg-unset {
