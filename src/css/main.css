@@ -377,11 +377,11 @@ body.modal-open main {
   }
 
   .carousel-control-prev-icon {
-    background-image: url("/src/assets/icons/arrow-left.svg");
+    background-image: url("../assets/icons/arrow-left.svg");
   }
 
   .carousel-control-next-icon {
-    background-image: url("/src/assets/icons/arrow-right.svg");
+    background-image: url("../assets/icons/arrow-right.svg");
   }
 }
 

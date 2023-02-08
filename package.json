@@ -1,8 +1,31 @@
 {
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "cssnano": "^4.1.11",
+    "node": "^14.19.1"
   },
   "devDependencies": {
-    "parcel": "^2.8.3"
-  }
+    "parcel": "^2.8.3",
+    "parcel-bundler": "^1.12.5"
+  },
+  "name": "24_brown_rabbit_frontend_task",
+  "description": "This is the job test if you wish to be a web developer at Twentyfour",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://fredobumma-admin@bitbucket.org/fredobumma/24_brown_rabbit_frontend_task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/fredobumma/24_brown_rabbit_frontend_task/issues"
+  },
+  "homepage": "https://bitbucket.org/fredobumma/24_brown_rabbit_frontend_task#readme"
 }
