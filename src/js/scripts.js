@@ -122,6 +122,7 @@ window.onload = function () {
   function handleHeroSlide() {
     // variables
     const heroItems = document.querySelectorAll(".carousel-item");
+    const images = [...heroItems].map((el) => el.children[0].lastElementChild);
     const carouselCaption =
       document.getElementsByClassName("carousel-caption")[0];
     const navigators = document.querySelectorAll(".navigators");
@@ -139,6 +140,13 @@ window.onload = function () {
 
     //event listeners
     navigators.forEach((nav) => nav.addEventListener("click", navigate));
+    images.forEach((image) => {
+      image.addEventListener("touchstart", (e) => e.preventDefault());
+      image.addEventListener("touchend", (e) => {
+        e.preventDefault();
+        navigate();
+      });
+    });
   }
   handleHeroSlide();
 
