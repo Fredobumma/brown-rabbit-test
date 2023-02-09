@@ -130,22 +130,19 @@ window.onload = function () {
     // logic and function(s)
     carouselCaption.innerHTML = captions[0];
 
+    const key = (i, length) => (i === length - 1 ? 0 : i + 1);
     const navigate = () => {
       heroItems.forEach((item, i) => {
         if (item.classList.contains("active"))
-          carouselCaption.innerHTML =
-            captions[i === captions.length - 1 ? 0 : i + 1];
+          carouselCaption.innerHTML = captions[key(i, captions.length)];
       });
     };
 
     //event listeners
     navigators.forEach((nav) => nav.addEventListener("click", navigate));
     images.forEach((image) => {
-      image.addEventListener("touchstart", (e) => e.preventDefault());
-      image.addEventListener("touchend", (e) => {
-        e.preventDefault();
-        navigate();
-      });
+      image.addEventListener("touchstart", () => null);
+      image.addEventListener("touchend", () => slide());
     });
   }
   handleHeroSlide();
