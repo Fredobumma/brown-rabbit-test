@@ -142,7 +142,7 @@ window.onload = function () {
     navigators.forEach((nav) => nav.addEventListener("click", navigate));
     images.forEach((image) => {
       image.addEventListener("touchstart", () => null);
-      image.addEventListener("touchend", () => slide());
+      image.addEventListener("touchend", navigate);
     });
   }
   handleHeroSlide();
